@@ -33,3 +33,96 @@ footer {
     place-content: center;
     background-color: var(--dark-cyan);
 }
+.card-main-container {
+    position: relative;
+    max-width: 355px;
+    height: auto;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    overflow: hidden;
+}
+.card-header-container {
+    width: auto;
+    height: auto;
+}
+.card-content-container {
+    position: relative;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding-top: 80px;
+}
+.card-content-container img {
+    position: absolute;
+    top: calc(50% - 185px);
+    border: solid 5px #FFFFFF;
+    border-radius: 50px;
+}
+.card-content-container .card-content--info {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 28px;
+}
+.card-content--info span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+.card-content--info h1 {
+    font-size: var(--gd);
+    font-weight: 700;
+    line-height: 2rem;
+    color: var(--dark-blue);
+}
+.card-content--info .card--info-age {
+    font-size: var(--gd);
+    font-weight: 400;
+    line-height: 2rem;
+    color: var(--grayish-blue);
+}
+.card-content--info .card--info-country {
+    font-size: var(--md);
+    font-weight: 400;
+    line-height: 1.8rem;
+    color: var(--grayish-blue);
+}
+.card-content-container .card-content--stats {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: solid 1px var(--dark-gray);
+    padding: 28px 40px;
+}
+.card-content--stats .card--stats-container {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-content--stats .card--stats-container .card--stats-number {
+    font-size: var(--gd);
+    font-weight: 700;
+    line-height: 2.8rem;
+    color: var(--dark-blue);
+}
+.card-content--stats .card--stats-container h2 {
+    font-size: var(--sm);
+    font-weight: 400;
+    line-height: 1.8rem;
+    letter-spacing: 1px;
+    color: var(--grayish-blue);
+}
