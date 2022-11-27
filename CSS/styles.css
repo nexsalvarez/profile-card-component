@@ -17,6 +17,7 @@ html {
 }
 body {
     font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--dark-cyan);
     overflow: hidden;
 }
 main {
@@ -24,14 +25,8 @@ main {
     min-height: 95vh;
     display: grid;
     place-content: center;
-    background-color: var(--dark-cyan);
-}
-footer {
-    width: 100%;
-    min-height: 5vh;
-    display: grid;
-    place-content: center;
-    background-color: var(--dark-cyan);
+    background: url('../images/bg-pattern-top.svg') calc(-40%) calc(200%) no-repeat,
+    url('../images/bg-pattern-bottom.svg') calc(120%) calc(-180%) no-repeat;
 }
 .card-main-container {
     position: relative;
@@ -125,4 +120,32 @@ footer {
     line-height: 1.8rem;
     letter-spacing: 1px;
     color: var(--grayish-blue);
+}
+footer {
+    width: 100%;
+    min-height: 5vh;
+    display: grid;
+    place-content: center;
+    background-color: var(--dark-cyan);
+}
+footer p {
+    font-size: var(--md);
+    font-weight: 400;
+    line-height: 1.8rem;
+    color: var(--dark-blue);
+}
+footer a {
+    color: navy;
+    text-decoration: none;
+    cursor: pointer;
+}
+footer a:hover {
+    color: var(--dark-blue);
+} 
+
+@media (max-width: 700px) {
+    main {
+        background: url('../images/bg-pattern-top.svg') calc(125%) calc(200%) no-repeat,
+        url('../images/bg-pattern-bottom.svg') calc(-20%) calc(-100%) no-repeat;
+    }
 }
