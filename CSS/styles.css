@@ -127,6 +127,7 @@ footer {
     display: grid;
     place-content: center;
     background-color: var(--dark-cyan);
+    padding: 28px 0;
 }
 footer p {
     font-size: var(--md);
